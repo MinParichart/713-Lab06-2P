@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { useEventStore } from '@/stores/event'
-import { storeToRefs } from 'pinia'
+import { useEventStore } from '@/stores/event';
+import { storeToRefs } from 'pinia';
+const props = defineProps<{ id: string }>()
 const store = useEventStore()
 const { event } = storeToRefs(store)
 </script>
